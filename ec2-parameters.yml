@@ -15,7 +15,7 @@ Parameters:
 
   InstanceKeyPair:
     Type: AWS::EC2::KeyPair::KeyName
-    Default: vamsi-chunduru
+    Default: testkeypair
     Description: "Select key pair"
 
   EBSVolumeSize:
