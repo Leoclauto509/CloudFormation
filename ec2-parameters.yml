@@ -15,7 +15,7 @@ Parameters:
 
   InstanceKeyPair:
     Type: AWS::EC2::KeyPair::KeyName
-    Default: testkeypair
+    Default: Familys-New-Key-Pair
     Description: "Select key pair"
 
   EBSVolumeSize:
@@ -28,11 +28,11 @@ Resources:
   MyEC2Instance:
     Type: "AWS::EC2::Instance"
     Properties: 
-      ImageId: 
+      ImageId:ami-0022f774911c1d690
         Ref: AMIID
-      InstanceType: 
+      InstanceType:t2.micro
         Ref: InstanceTypeParameter
-      KeyName: 
+      KeyName:Familys-New-Key-Pair
         Ref: InstanceKeyPair
       BlockDeviceMappings:
         -
